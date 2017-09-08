@@ -1,18 +1,25 @@
+// SASS VARIABLES
+$bgcolor: #ffe4c2;
+$width: 50%;
+$blue: #050096;
+$padding: 10px;
+$font: 'Myriad pro';
+
 *{
     box-sizing: border-box;
 }
 body{
     text-align: center;
-    background-color: #ffe4c2;
-    font-family: 'Myriad pro';
+    background-color: $bgcolor;
+    font-family: $font;
     max-width: 750px;
     margin: 0 auto;
 }
 
 div{
-    border: 1px solid #050096;
+    border: 1px solid $blue;
     border-radius: 5px;
-    box-shadow: 1px 1px 7px 1px #050096;
+    box-shadow: 1px 1px 7px 1px $blue;
     margin: 15px;
     padding: 15px;
 }
@@ -28,10 +35,10 @@ h1,h2{
 }
 
 input,button{
-    width: 50%;
-    padding: 10px;
+    width: $width;
+    padding: $padding;
 }
 textarea{
-    width: 50%;
-    padding: 10px;
+    width: $width;
+    padding: $padding;
 }
