@@ -5,6 +5,12 @@ $blue: #050096;
 $padding: 10px;
 $font: 'Myriad pro';
 
+@mixin flex{
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -22,6 +28,7 @@ body{
       margin: 15px;
       padding: 15px;
       background-color: $bgcolor;
+      @include flex;
   }
 
   ul{
@@ -29,9 +36,13 @@ body{
       margin-bottom: 0;
       padding: 0;
   }
-
-  h1,h2{
-      font-weight: normal;
+ h1{
+   font-weight: normal;
+   text-decoration: underline;
+ }
+ h2{
+      @extend h1;
+      font-size: 1.2rem;
   }
 
   input,button{
@@ -39,7 +50,6 @@ body{
       padding: $padding;
   }
   textarea{
-      width: $width;
-      padding: $padding;
+      @extend input;
   }
 }
