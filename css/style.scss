@@ -10,35 +10,36 @@ $font: 'Myriad pro';
 }
 body{
     text-align: center;
-    background-color: $bgcolor;
+    background-color: lighten($bgcolor, 5%);
     font-family: $font;
     max-width: 750px;
     margin: 0 auto;
-}
 
-div{
-    border: 1px solid $blue;
-    border-radius: 5px;
-    box-shadow: 1px 1px 7px 1px $blue;
-    margin: 15px;
-    padding: 15px;
-}
+  div{
+      border: 1px solid $blue;
+      border-radius: 5px;
+      box-shadow: 1px 1px 7px 1px opacify($blue, .9);
+      margin: 15px;
+      padding: 15px;
+      background-color: $bgcolor;
+  }
 
-ul{
-    list-style: none;
-    margin-bottom: 0;
-    padding: 0;
-}
+  ul{
+      list-style: none;
+      margin-bottom: 0;
+      padding: 0;
+  }
 
-h1,h2{
-    font-weight: normal;
-}
+  h1,h2{
+      font-weight: normal;
+  }
 
-input,button{
-    width: $width;
-    padding: $padding;
-}
-textarea{
-    width: $width;
-    padding: $padding;
+  input,button{
+      width: $width;
+      padding: $padding;
+  }
+  textarea{
+      width: $width;
+      padding: $padding;
+  }
 }
